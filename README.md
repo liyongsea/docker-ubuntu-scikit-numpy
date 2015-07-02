@@ -18,3 +18,4 @@ RUN anything
 CMD python myscript.py
 ```
 
+Docker HUB repo: https://registry.hub.docker.com/u/catholabs/docker-ubuntu-scikit-numpy/
