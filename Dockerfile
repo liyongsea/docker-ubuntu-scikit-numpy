@@ -13,6 +13,7 @@ RUN apt-get -y update && apt-get install -y \
     libmysqlclient* \
     python2.7 \
     python-dev \
-    python-pip
+    python-pip \
+    tmux
 
 RUN pip install -r requirements.txt
