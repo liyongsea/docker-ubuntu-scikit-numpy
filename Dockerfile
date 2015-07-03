@@ -15,6 +15,9 @@ RUN apt-get -y update && apt-get install -y \
     python-dev \
     python-pip \
     tmux \
-    curl
+    curl \
+    nano \
+    vim \
+    git
 
 RUN pip install -r requirements.txt
