@@ -2,6 +2,7 @@ from ubuntu:14.04
 
 COPY requirements.txt /tmp/
 WORKDIR /tmp
+MAINTAINER CathoLabs catholabs@catho.com
 
 # enable the universe
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
