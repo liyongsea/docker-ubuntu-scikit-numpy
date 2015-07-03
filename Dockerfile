@@ -14,6 +14,7 @@ RUN apt-get -y update && apt-get install -y \
     python2.7 \
     python-dev \
     python-pip \
-    tmux
+    tmux \
+    curl
 
 RUN pip install -r requirements.txt
