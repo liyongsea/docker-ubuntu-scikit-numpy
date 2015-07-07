@@ -29,9 +29,9 @@ RUN apt-get -y update && apt-get install -y \
     wget \
     supervisor
 
-RUN mkdir -p /var/log/supervisor && \
-    mkdir -p /etc/supervisor/conf.d \
-    mkdir -p /supervisor
+RUN mkdir -p /var/log/supervisor
+RUN mkdir -p /etc/supervisor/conf.d
+RUN mkdir -p /supervisor
 
 # supervisor base configuration
 COPY supervisor.conf /etc/supervisor/supervisord.conf
