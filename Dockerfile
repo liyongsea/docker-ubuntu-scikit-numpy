@@ -3,6 +3,8 @@ from ubuntu:14.04
 COPY requirements.txt /tmp/
 WORKDIR /tmp
 MAINTAINER CathoLabs catholabs@catho.com
+ENV DEBIAN_FRONTEND noninteractive
+
 
 # enable the universe
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
@@ -19,6 +21,19 @@ RUN apt-get -y update && apt-get install -y \
     curl \
     nano \
     vim \
-    git
+    git \
+    htop \
+    man \
+    software-properties-common \
+    unzip \
+    wget \
+    supervisor
+
+RUN mkdir -p /var/log/supervisor && \
+    mkdir -p /etc/supervisor/conf.d \
+    mkdir -p /supervisor
+
+# supervisor base configuration
+COPY supervisor.conf /etc/supervisor.conf
 
 RUN pip install -r requirements.txt
