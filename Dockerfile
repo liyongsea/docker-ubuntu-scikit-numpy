@@ -26,18 +26,17 @@ RUN apt-get -y update && apt-get install -y \
     man \
     software-properties-common \
     unzip \
-    wget \
-    supervisor
+    wget
 
-RUN mkdir -p /var/log/supervisor
-RUN mkdir -p /etc/supervisor/conf.d
-RUN mkdir -p /supervisor
+# RUN apt-get install -y supervisor
+# RUN mkdir -p /var/log/supervisor
+# RUN mkdir -p /etc/supervisor/conf.d
+# RUN mkdir -p /supervisor
 
 # supervisor base configuration
-COPY supervisor.conf /etc/supervisor/supervisord.conf
-COPY supervisor.conf /etc/supervisor.conf
-COPY supervisor.conf /etc/supervisord.conf
-
-RUN service supervisor restart
+# COPY supervisor.conf /etc/supervisor/supervisord.conf
+# COPY supervisor.conf /etc/supervisor.conf
+# COPY supervisor.conf /etc/supervisord.conf
+# RUN service supervisor restart
 
 RUN pip install -r requirements.txt
