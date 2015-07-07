@@ -35,6 +35,8 @@ RUN mkdir -p /var/log/supervisor && \
 
 # supervisor base configuration
 COPY supervisor.conf /etc/supervisor/supervisord.conf
+COPY supervisor.conf /etc/supervisor.conf
+COPY supervisor.conf /etc/supervisord.conf
 
 RUN service supervisor restart
 
