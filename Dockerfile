@@ -34,6 +34,8 @@ RUN mkdir -p /var/log/supervisor && \
     mkdir -p /supervisor
 
 # supervisor base configuration
-COPY supervisor.conf /etc/supervisor.conf
+COPY supervisor.conf /etc/supervisor/supervisord.conf
+
+RUN service supervisor restart
 
 RUN pip install -r requirements.txt
