@@ -14,6 +14,10 @@ RUN apt-get -y update && apt-get install -y \
     libopenblas-dev \
     liblapack-dev \
     libmysqlclient* \
+    libtiff5-dev \
+    libjpeg8-dev \
+    zlib1g-dev \
+    libfreetype6-dev \
     python2.7 \
     python-dev \
     python-pip \
