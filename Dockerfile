@@ -34,7 +34,7 @@ RUN apt-get -y update && apt-get install -y \
     unzip \
     wget
 
-RUN apt-get install -y build-dep python-matplotlib
+RUN apt-get build-dep -y python-matplotlib
 # RUN apt-get install -y supervisor
 # RUN mkdir -p /var/log/supervisor
 # RUN mkdir -p /etc/supervisor/conf.d
