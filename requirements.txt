@@ -52,3 +52,5 @@ flasgger==0.3.6
 ipython[notebook]
 flask-debugtoolbar
 seaborn==0.6.0
+
+pyzmq==14.7.0
