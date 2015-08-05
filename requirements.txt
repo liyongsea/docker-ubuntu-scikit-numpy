@@ -47,9 +47,9 @@ gspread==0.2.5
 oauth2client==1.4.11
 
 minepy==1.0.0
-flasgger==0.3.6
+flasgger==0.4.0
 
-ipython[notebook]
+ipython[all]
 flask-debugtoolbar
 seaborn==0.6.0
 
