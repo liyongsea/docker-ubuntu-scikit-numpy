@@ -34,7 +34,7 @@ RUN apt-get -y update && apt-get install -y \
     unzip \
     wget \
     libncurses5-dev \
-    readline
+    readline-common
 
 RUN apt-get build-dep -y python-matplotlib
 # RUN apt-get install -y supervisor
