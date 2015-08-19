@@ -32,7 +32,9 @@ RUN apt-get -y update && apt-get install -y \
     man \
     software-properties-common \
     unzip \
-    wget
+    wget \
+    libncurses5-dev \
+    readline
 
 RUN apt-get build-dep -y python-matplotlib
 # RUN apt-get install -y supervisor
