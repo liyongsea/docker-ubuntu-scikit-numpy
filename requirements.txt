@@ -46,7 +46,7 @@ prettytable==0.7.2
 gspread==0.2.5
 oauth2client==1.4.11
 minepy==1.0.0
-flasgger==0.4.1
+flasgger==0.4.3
 pyzmq==14.7.0
 
 ipython[all]
